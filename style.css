@@ -33,34 +33,40 @@ h1{
 	text-shadow:  2px 2px 6px #FF0000;
 }
 
-.hello{
-    position: absolute;
+p{
+
+	background-color: blue;
+	padding: 30px;
+}
+
+
+
+details{
+	position:fixed;
     top:0%;
-    right: 0;
+    right: 0%;
+	padding:0% 1% 0% 0.75%;
+	font-size: 1.7em;
+	background-color: rgba(48, 82, 83, 0.142);
+	border-radius: 15%;
 
 }
 
-.details{
-    background-color: rgb(170, 135, 135);
-size: 2em;
-}
 
-summary.summary{
-    size: 5em;
-}
 details > summary::marker {
- 
     content: "≡";
-    size:20px;
 }
+
 details[open] > summary::marker {
     /* display: none; */
     content: "≡";
-    size: 150;
+	
 }
-.menuButton{ 
-    background-color: red;
 
-
+.menuLink{ 
+   
+	font-size: 0.7em;
+	text-align: left;
+	padding-left: 12%;
 
 }
