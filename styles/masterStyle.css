@@ -16,6 +16,7 @@ body {
 	
 	margin: 0;
 	padding: 0;
+	
 	background-image:
 	linear-gradient(
       rgba(0, 0, 0, 0.25),
@@ -24,7 +25,9 @@ body {
   	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover ;
-	height: 100svh;
+	
+	height: 100vh;
+	height: calc(var(--vh ,1vh)*100);
 
 }
 
@@ -284,8 +287,10 @@ a{
 	display: none;
 	font-size: 40px;
 	
+	
 }
 summary::marker {
+	
     content: "≡";
 }
 /*TODO: change @media to @ container w/ inline-size containers
@@ -426,12 +431,12 @@ put container changes before the query I believe */
 			top: 0;
 		}
 		details > summary::marker {
-			content: "≡";
+			content: "\2030";
 		}
 		
 		details[open] > summary::marker {
 			
-			content: "≡";
+			content: "abc";
 			
 		}
 		.menuLink{ 
