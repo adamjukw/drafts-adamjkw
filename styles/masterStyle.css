@@ -430,18 +430,24 @@
 				position: -o-sticky;
 				position: sticky;
 				top: 0;
+				
 			}
 			details > summary::marker {
-				display: none;
-				content: "≡";
-				color: blue;
+				
+				content: "";
+				
 			}
 			
 			details[open] > summary::marker {
 				
-				content: "≡";
+				content: "";
 				
 			}
+			summary::before {
+				
+				content: "≡";
+				cursor: pointer;
+			   }
 			.menuLink{ 
 			   
 				font-size: 0.7em;
