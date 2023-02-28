@@ -294,6 +294,13 @@
 		
 		content: "≡";
 	}
+	ul, summary {
+    list-style-type: none;
+	}
+	summary::marker {
+    	color:#fff;
+    	z-index:-5;
+	} 
 	/*TODO: change @media to @ container w/ inline-size containers
 	
 	put container changes before the query I believe */
@@ -433,13 +440,13 @@
 				
 			}
 			details > summary::marker {
-				
+				display: none;
 				content: "";
 				
 			}
 			
 			details[open] > summary::marker {
-				
+				display: none;
 				content: "";
 				
 			}
