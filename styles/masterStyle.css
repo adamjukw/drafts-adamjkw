@@ -434,6 +434,7 @@
 			details > summary::marker {
 				display: none;
 				content: "≡";
+				color: blue;
 			}
 			
 			details[open] > summary::marker {
